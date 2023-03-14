@@ -1,7 +1,10 @@
 name: diccee_flutter
 description: A new Flutter project.
 
+
 publish_to: 'none'
+
+
 version: 1.0.0+1
 
 environment:
@@ -13,12 +16,12 @@ dependencies:
     sdk: flutter
 
 
-  
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 
   flutter_lints: ^2.0.0
@@ -31,7 +34,6 @@ flutter:
 
   assets:
     - assets/images/
- 
 
 
   # fonts:

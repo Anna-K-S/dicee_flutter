@@ -1,4 +1,6 @@
+
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,10 +9,14 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
+
           title: const Text('Dicee'),
           backgroundColor: Colors.red,
         ),
         body: const DicePage(),
+=======
+     
+
       ),
     ),
   );
@@ -36,23 +42,28 @@ class _DicePageState extends State<DicePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Center(
       child: Row(
         children: <Widget>[
           Expanded(
             child: TextButton(
+
               onPressed: () {
                 changeDiceFace();
               },
+
+
               child: Image.asset('assets/images/dice$leftDiceNumber.png'),
             ),
           ),
           Expanded(
             child: TextButton(
+
               onPressed: () {
                 changeDiceFace();
               },
-              child: Image.asset('assets/images/dice$rightDiceNumber.png'),
+     child: Image.asset('assets/images/dice$rightDiceNumber.png'),
             ),
           ),
         ],
