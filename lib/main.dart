@@ -7,10 +7,13 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
+
           title: const Text('Dicee'),
           backgroundColor: Colors.red,
         ),
         body: const DicePage(),
+
+
       ),
     ),
   );
@@ -18,6 +21,7 @@ void main() {
 
 class DicePage extends StatefulWidget {
   const DicePage({super.key});
+
 
   @override
   _DicePageState createState() => _DicePageState();
@@ -34,6 +38,7 @@ class _DicePageState extends State<DicePage> {
     });
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -41,18 +46,24 @@ class _DicePageState extends State<DicePage> {
         children: <Widget>[
           Expanded(
             child: TextButton(
+
+
               onPressed: () {
                 changeDiceFace();
               },
+
               child: Image.asset('assets/images/dice$leftDiceNumber.png'),
             ),
           ),
           Expanded(
             child: TextButton(
+
               onPressed: () {
                 changeDiceFace();
               },
-              child: Image.asset('assets/images/dice$rightDiceNumber.png'),
+     child: Image.asset('assets/images/dice$rightDiceNumber.png'),
+
+
             ),
           ),
         ],
